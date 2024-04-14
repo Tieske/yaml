@@ -997,7 +997,7 @@ func yaml_emitter_check_simple_key(emitter *yaml_emitter_t) bool {
 	default:
 		return false
 	}
-	return length <= 128
+	return length <= 1024
 }
 
 // Determine an acceptable scalar style.
